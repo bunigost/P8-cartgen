@@ -27,6 +27,11 @@ Since some titles and author names are made entirely with special characters and
 ### Issue 2: Emojis
 Some titles and author names contain emojis, making text like "&amp;" appear in cart files. The issue seems to stem from curl, which can't process these characters properly.
 
+### Issue 3 : Posts not containing carts added to carts files
+Some posts are wrongfully tagged as cartridges and since the scripts checks for "PICO-8" and "Cartridges" tags, their IDs are added to carts files.
+Script should be revamped to check for download link instead of tags.
+In the meantime, these IDs are manually added to notcarts.txt.
+
 ## Note
 
 - Previously generated files are included in the repo to save you approximately 5 hours and 30 minutes.
